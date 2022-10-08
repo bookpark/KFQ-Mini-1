@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | 샵</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-center">
+            <div>
+                <button class="toggle-nav">
+                    <i class="bi bi-list"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="" class="nav-link">Home</a></li>
+                    <li><a href="#to-shop" class="nav-link">Products</a></li>
+                </ul>
+            </div>
+            <img class="nav-logo" src="logo.svg" alt="LOGO">
+            <div class="toggle-container">
+                <button class="toggle-cart"><i class="bi bi-cart"></i>
+                </button>
+                <span class="cart-item-count"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Side Bar -->
+    <div class="sidebar-overlay">
+        <aside class="sidebar">
+            <ul class="sidebar-links">
+                <li><a href="" class="sidebar-link">Home</a></li>
+                <br>
+                <li><a href="#to-shop" class="sidebar-link product-link">Products</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Cart -->
+    <div class="cart-overlay">
+        <aside class="cart">
+            <button class="cart-close">
+                <i class="bi bi-x-circle"></i>
+            </button>
+            <header>
+                <h3 class="cart-title">장바구니</h3>
+            </header>
+            <div class="cart-items">
+
+            </div>
+            <footer>
+                <h3 class="cart-total">총: 0</h3>
+                <button class="cart-checkout">구매하기</button>
+            </footer>
+        </aside>
+    </div>
+
+    <!-- Main -->
+    <section class="main">
+        <div class="main-container">
+            <h1>Veni, vidi, vici</h1>
+            <h3>Julius Caesar</h3>
+            <a href="#to-shop"><button class="shop-btn">Shop Now</button></a>
+        </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="shop" id="to-shop">
+        <div class="title">Products</div>
+        <div class="shop-container">
+            <article class="product">
+                <div class="product-container">
+                    <img class="product-img" src="/JS/dog.png" alt="">
+                    <div class="product-icons">
+                        <a href="#" class="product-icon"><i class="bi bi-search"></i></a>
+                        <button class="product-icon"><i class="bi bi-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <footer>
+                    <p class="product-name">DJ 포메라니안</p>
+                    <h4 class="product-price">10.0</h4>
+                </footer>
+            </article>
+            <article class="product">
+                <div class="product-container">
+                    <img class="product-img" src="/JS/dog.png" alt="">
+                    <div class="product-icons">
+                        <a href="#" class="product-icon"><i class="bi bi-search"></i></a>
+                        <button class="product-icon"><i class="bi bi-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <footer>
+                    <p class="product-name">DJ 포메라니안</p>
+                    <h4 class="product-price">10.0</h4>
+                </footer>
+            </article>
+            <article class="product">
+                <div class="product-container">
+                    <img class="product-img" src="/JS/dog.png" alt="">
+                    <div class="product-icons">
+                        <a href="#" class="product-icon"><i class="bi bi-search"></i></a>
+                        <button class="product-icon"><i class="bi bi-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <footer>
+                    <p class="product-name">DJ 포메라니안</p>
+                    <h4 class="product-price">10.0</h4>
+                </footer>
+            </article>
+            <article class="product">
+                <div class="product-container">
+                    <img class="product-img" src="/JS/dog.png" alt="">
+                    <div class="product-icons">
+                        <a href="#" class="product-icon"><i class="bi bi-search"></i></a>
+                        <button class="product-icon product-cart-btn"><i class="bi bi-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <footer>
+                    <p class="product-name">DJ 포메라니안</p>
+                    <h4 class="product-price">10.0</h4>
+                </footer>
+            </article>
+            <article class="product">
+                <div class="product-container">
+                    <img class="product-img" src="/JS/dog.png" alt="">
+                    <div class="product-icons">
+                        <a href="#" class="product-icon"><i class="bi bi-search"></i></a>
+                        <button class="product-icon product-cart-btn"><i class="bi bi-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <footer>
+                    <p class="product-name">DJ 포메라니안</p>
+                    <h4 class="product-price">10.0</h4>
+                </footer>
+            </article>
+            <article class="product">
+                <div class="product-container">
+                    <img class="product-img" src="/JS/dog.png" alt="">
+                    <div class="product-icons">
+                        <a href="#" class="product-icon"><i class="bi bi-search"></i></a>
+                        <button class="product-icon product-cart-btn"><i class="bi bi-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <footer>
+                    <p class="product-name">DJ 포메라니안</p>
+                    <h4 class="product-price">10.0</h4>
+                </footer>
+            </article>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
