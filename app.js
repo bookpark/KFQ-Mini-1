@@ -19,9 +19,16 @@ document.querySelector('.toggle-nav').addEventListener(
     }
 )
 
-//closeSideBarClickedProducts
+// closeSideBarClickedProducts
 document.querySelector('.product-link').addEventListener(
     'click', () => {
         document.querySelector('.sidebar-overlay').classList.remove('show');
+    }
+)
+
+// setOverflowHiddenInCart
+document.querySelector('.toggle-cart').addEventListener(
+    'click', () => {
+        document.querySelector('body').classList.add('overflow-hidden')
     }
 )
