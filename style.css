@@ -258,6 +258,7 @@ body.overflow-hidden {
     margin: 0 auto;
     font-weight: bolder;
     font-size: 1.25rem;
+    margin-bottom: 30px;
 }
 
 .cart-checkout:hover {
