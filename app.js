@@ -26,9 +26,16 @@ document.querySelector('.product-link').addEventListener(
     }
 )
 
-// setOverflowHiddenInCart
+// setBodyOverflowHidden
 document.querySelector('.toggle-cart').addEventListener(
     'click', () => {
-        document.querySelector('body').classList.add('overflow-hidden')
+        document.querySelector('body').classList.add('overflow-hidden');
+    }
+)
+
+// rmBodyOverflowHidden
+document.querySelector('.cart-close').addEventListener(
+    'click', () => {
+        document.querySelector('body').classList.remove('overflow-hidden');
     }
 )
