@@ -403,3 +403,70 @@ body.overflow-hidden {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
+/* Modal */
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.733);
+    margin-top: -1px;
+    animation: zoom 0.3s ease-in-out;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.modalClose {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.modalClose:hover {
+    color: white;
+}
+
+@media screen and (min-width: 300px) {
+    .modal img {
+        width: 75%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .modal img {
+        width: 50%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .modal img {
+        width: 40%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal img {
+        width: 35%;
+        object-fit: cover;
+    }
+}
