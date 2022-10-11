@@ -448,21 +448,36 @@ body.overflow-hidden {
 
 @media screen and (min-width: 300px) {
     .modal img {
+        width: 85%;
+        object-fit: cover;
+    }
+}
+
+
+@media screen and (min-width: 400px) {
+    .modal img {
         width: 75%;
         object-fit: cover;
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
     .modal img {
-        width: 50%;
+        width: 65%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .modal img {
+        width: 55%;
         object-fit: cover;
     }
 }
 
 @media screen and (min-width: 900px) {
     .modal img {
-        width: 40%;
+        width: 45%;
         object-fit: cover;
     }
 }
