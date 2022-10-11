@@ -10,6 +10,7 @@ h1 {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 body.overflow-hidden {
@@ -18,7 +19,7 @@ body.overflow-hidden {
 
 /* Navigation Bar */
 .nav-logo {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(150deg) brightness(102%) contrast(102%);
+    filter: grey;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -51,7 +52,7 @@ body.overflow-hidden {
 }
 
 .nav-link:hover {
-    color: deeppink
+    color: lightgrey;
 }
 
 .nav-links {
@@ -66,16 +67,16 @@ body.overflow-hidden {
     background: transparent;
     width: 3.5rem;
     height: 2.5rem;
-    color: white;
+    color: rgb(100, 100, 100);
     font-size: 1.5rem;
     cursor: pointer;
-    border: 1px solid white;
+    border: 1px solid rgb(100, 100, 100);
     margin-left: 40px;
 }
 
 .toggle-nav:hover {
-    background: white;
-    color: black;
+    background: rgb(50, 50, 50);
+    color: lightgrey;
 }
 
 .toggle-container {
@@ -87,9 +88,13 @@ body.overflow-hidden {
     background: transparent;
     border-color: transparent;
     font-size: 2rem;
-    color: white;
+    color: rgb(100, 100, 100);
     cursor: pointer;
     padding-right: 40px;
+}
+
+.toggle-cart:hover {
+    color: rgb(50, 50, 50);
 }
 
 @media screen and (max-width: 800px) {
@@ -127,7 +132,7 @@ body.overflow-hidden {
     width: 100%;
     height: 100%;
     max-width: 200px;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(124, 128, 133, 0.7);
     padding: 5rem 1rem 0 1rem;
 }
 
@@ -145,7 +150,7 @@ body.overflow-hidden {
 }
 
 .sidebar-link:hover {
-    color: deeppink;
+    color: lightgrey;
 }
 
 .sidebar-overlay.show {
@@ -161,7 +166,7 @@ body.overflow-hidden {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    transition: all 0.3s linear;
+    transition: 0.3s ease-in-out all;
     opacity: 0;
     z-index: -1;
 }
@@ -178,9 +183,10 @@ body.overflow-hidden {
     width: 100%;
     height: 100%;
     max-width: 400px;
-    background: white;
+    background: rgb(236, 236, 236);
     padding: 3rem 1rem 0 1rem;
     display: grid;
+    transition: 0.3s ease-in-out all;
 }
 
 .cart-close {
@@ -227,6 +233,7 @@ body.overflow-hidden {
 
 .cart-item-name {
     font-size: 1rem;
+    padding-bottom: 0.25rem;
 }
 
 .cart-item-price {
@@ -240,7 +247,7 @@ body.overflow-hidden {
     display: block;
     background: transparent;
     border-color: transparent;
-    color: red;
+    color: rgb(255, 93, 93);
     cursor: pointer;
 }
 
@@ -251,7 +258,7 @@ body.overflow-hidden {
 }
 
 .cart-checkout {
-    background: deeppink;
+    background: rgb(100, 100, 100);
     color: white;
     border-radius: 0.25rem;
     border-color: transparent;
@@ -266,9 +273,9 @@ body.overflow-hidden {
 }
 
 .cart-checkout:hover {
-    background: white;
-    border-color: deeppink;
-    color: deeppink;
+    background: lightgrey;
+    border-color: rgb(100, 100, 100);
+    color: rgb(100, 100, 100);
     font-weight: bold;
 }
 
@@ -282,7 +289,7 @@ body.overflow-hidden {
     margin-top: -6rem;
     min-height: 100vh;
     place-items: center;
-    background-image: url('main-bg.png');
+    background-image: url('imgs/banner.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -301,11 +308,11 @@ body.overflow-hidden {
     margin-top: 0.75rem;
     text-transform: uppercase;
     color: white;
+    cursor: pointer;
 }
 
 .shop-btn:hover {
-    background-color: white;
-    color: black;
+    background-color: lightgrey;
 }
 
 /* Shop */
@@ -332,9 +339,9 @@ body.overflow-hidden {
 }
 
 .product-icon {
-    width: 3rem;
-    height: 3rem;
-    font-size: 25px;
+    width: 2rem;
+    height: 2rem;
+    font-size: 15px;
     display: grid;
     place-items: center;
     border-radius: 50%;
@@ -355,7 +362,7 @@ body.overflow-hidden {
 }
 
 .product-icon:hover {
-    background: deeppink;
+    background: lightgrey;
 }
 
 .product-container:hover .product-icons {
@@ -378,10 +385,21 @@ body.overflow-hidden {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
     .shop-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .product .img {
+        height: 15rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .shop-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .product .img {
