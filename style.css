@@ -146,6 +146,7 @@ body.overflow-hidden {
 .sidebar-link {
     color: white;
     font-weight: bolder;
+    line-height: 2;
 
 }
 
@@ -327,7 +328,7 @@ body.overflow-hidden {
 
 .product-container {
     position: relative;
-    margin: 3rem 1rem 3rem 1rem;
+    margin: 3rem 0 3rem 0;
     cursor: pointer;
     overflow: hidden;
 }
