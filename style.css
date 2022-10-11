@@ -327,15 +327,18 @@ body.overflow-hidden {
 
 .product-container {
     position: relative;
-    margin: 3rem auto 2rem auto;
-    gap: 1rem;
-    min-height: 6rem;
+    margin: 3rem 1rem 3rem 1rem;
     cursor: pointer;
     overflow: hidden;
 }
 
+.product-img-container {
+    width: 100%;
+    height: 25rem;
+}
+
 .product-img {
-    height: 15rem;
+    height: 25rem;
     object-fit: cover;
 }
 
@@ -344,14 +347,15 @@ body.overflow-hidden {
 }
 
 .product-icon {
-    width: 2rem;
-    height: 2rem;
-    font-size: 15px;
+    width: 3rem;
+    height: 3rem;
+    font-size: 25px;
     display: grid;
     place-items: center;
     border-radius: 50%;
     border: solid 1px black;
     transition: all 0.3s linear;
+    opacity: 0;
     cursor: pointer;
     background: white;
 }
@@ -361,17 +365,16 @@ body.overflow-hidden {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
     display: flex;
     transition: all 0.3s linear;
 }
 
-.product-icon:hover {
-    background: lightgrey;
+.product-container:hover .product-icon {
+    opacity: 1;
 }
 
-.product-container:hover .product-icons {
-    opacity: 1;
+.product-icon:hover {
+    background: lightgrey;
 }
 
 .product-name {
