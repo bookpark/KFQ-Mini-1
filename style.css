@@ -146,7 +146,7 @@ body.overflow-hidden {
 .sidebar-link {
     color: white;
     font-weight: bolder;
-    
+
 }
 
 .sidebar-link:hover {
@@ -325,17 +325,22 @@ body.overflow-hidden {
     text-align: center;
 }
 
-.product-img {
-    height: 15rem;
-    object-fit: cover;
-    border-radius: 5%;
-}
-
 .product-container {
     position: relative;
     margin: 3rem auto 2rem auto;
     gap: 1rem;
     min-height: 6rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.product-img {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.product-img:hover {
+    transform: scale(1.1);
 }
 
 .product-icon {
@@ -390,19 +395,11 @@ body.overflow-hidden {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-
-    .product .img {
-        height: 15rem;
-    }
 }
 
 @media screen and (min-width: 1200px) {
     .shop-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .product .img {
-        height: 15rem;
     }
 }
